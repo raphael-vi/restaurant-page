@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap ');
+
+  
+
+:root{
+    --primary-color: #26607A;
+    --secondary-color: #ffffff;
+    --third-color: #0e0e0ee1;
+    --primary-font : 'Nanum Gothic', sans-serif;
+    --font-color: #60CAF0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    
+
+}
+
+body{
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+#content{
+    min-height: 100vh;
+   
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+    background-color:  var(--primary-color);
+}
+
+
+header{
+  
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.171);
+    
+    background-color: var(--secondary-color);
+}
+
+.logo{
+    cursor: pointer;
+
+}
+
+button{
+    border-style: none;
+    overflow: visible;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0);
+
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 3px 3px 0px 0px;
+    cursor: pointer;
+    transition: transform 0.1s;
+    
+
+    
+}
+button:hover{
+
+    transform: scale(1.1);
+
+    
+}
+
+
+main{ 
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+
+    font-family: var(--primary-font);
+    color: white;
+      
+    
+}
+nav{
+    margin-inline: 120px;
+}
+.slogan{
+    margin-block: 20px;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-shadow: 3px 4px 0px rgba(0,0,0,0.97);
+
+}
+
+#section{
+    background-color: aliceblue;
+    width: 200px;
+    height: 200px;
+}
+.fake-button{
+    background-color: var(--secondary-color);
+    color: black;
+    margin: 10px;
+    width:200px;
+    margin-inline: auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.97);
+    cursor: pointer;
+    
+    padding: 10px;
+}
+
+.images{
+    
+    margin: 30px;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    color: black;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.97);
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.textmenu{
+    margin-right: 10px;
+    
+    grid-column: 0/1;
+}
+
+.textmenu > h2{
+    margin-bottom: 6px;
+    font-weight: bolder;
+}
+
+img{
+    grid-column: 2/3;
+    border-radius: 30px;
+    transition: transform 0.2s;
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    background-color: #26607A;
+}
+img:hover{
+    transform: scale(1.1);
+    position: absolute;
+    width: 300px;
+    height: 200px; 
+}
+footer{
+    background-color: var(--secondary-color);
+    height: 30px;
+    position: relative;
+
+    bottom: 0;
+    
+}
+
+@media  (max-width: 730px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+    }
+    
+}
