@@ -40,6 +40,7 @@ header{
     display: flex;
     justify-content: center;
     align-items:center;
+    position: sticky;
 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.171);
     
@@ -151,15 +152,21 @@ img{
     object-fit:cover;
     background-color: #26607A;
 }
-img:hover{
-    transform: scale(1.1);
-    position: absolute;
-    width: 300px;
-    height: 200px; 
+
+#icon{
+    background-color: white;
+    width: 30px;
+    margin: 5px;
+    margin-right: 30px;
+    height: 30px;
 }
+
 footer{
     background-color: var(--secondary-color);
-    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
     position: relative;
 
     bottom: 0;

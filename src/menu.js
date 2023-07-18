@@ -25,7 +25,7 @@ const menu = function () {
     <h2>${item.name}</h2>
     <p>${item.description}</p>
     </div>
-      <img src="${item.image}" alt="${item.name} class= item-img">
+      <img src="${item.image}" alt="${item.name} "class= item-img">
     `;
     menuContainer.appendChild(menuItemElement);
   });

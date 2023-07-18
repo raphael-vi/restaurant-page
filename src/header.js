@@ -1,3 +1,5 @@
+import icon from './resource/github (1).png';
+
 const header = function () {
     const header = document.createElement('header');
     const logo = document.createElement ('h1');
@@ -29,7 +31,11 @@ const header = function () {
 
 const footer = function(){
     const footer = document.createElement('footer');
-    footer.textContent ='R'
+    footer.innerHTML = `
+    <h4>@raphael-vi</h4>
+    <a href="https://github.com/raphael-vi" target="_blank">
+    <img src="${icon}" alt="${icon}" id="icon">
+    </a>`;
     return footer;
 }
 
